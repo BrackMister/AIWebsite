@@ -72,83 +72,99 @@
     </head>
 
     <body class="w3-light-grey">
-    <div class="graybox">
-
+      <div class="graybox">
+    
         <!-- NAV BAR -->
         <nav class="my-nav">
-        <div class="w3-bar w3-padding-small">
+          <div class="w3-bar w3-padding-small">
             <a href="index.html" class="w3-bar-item navlink active">Home</a>
             <a href="about.html" class="w3-bar-item navlink">About</a>
             <a href="portfolio.html" class="w3-bar-item navlink">Portfolio</a>
             <a href="contact.html" class="w3-bar-item navlink">Contact</a>
             <div class="w3-right w3-hide-small">
-            <a href="https://example.com" target="_blank" rel="noopener" class="w3-bar-item navlink">External</a>
+              <a href="https://example.com" target="_blank" rel="noopener" class="w3-bar-item navlink">External</a>
             </div>
-        </div>
+          </div>
         </nav>
-
+    
         <!-- BANNER (animated) -->
         <img src="TownfrontwithSnow1000.jpg" alt="Snowy Town Banner" class="banner w3-image w3-animate-opacity">
-
-        <!-- GALLERY (3 columns x 2 rows) with W3 animations -->
+    
+        <!-- GALLERY (W3.CSS Fluid Grid: l3 m4 s12 -> 4 / 3 / 1 columns) -->
         <div class="gallery-row">
-        <div class="w3-row-padding">
-
-            <div class="w3-third w3-margin-bottom">
-            <div class="w3-card-4 card-hover w3-animate-bottom">
-                <img src="FrontStreet.jpg" alt="Snow Town — Front Street" class="thumb">
-                <div class="card-caption">Snow Town — Front Street</div>
+          <div class="w3-row-padding" role="list" aria-label="Photo gallery">
+    
+            <!-- Image 1 -->
+            <div class="w3-col l3 m4 s12 w3-margin-bottom card-hover w3-card-4" role="listitem">
+              <img src="FrontStreet.jpg" alt="Snow Town — Front Street" class="thumb w3-image" loading="lazy">
+              <div class="card-caption">Snow Town — Front Street</div>
             </div>
+    
+            <!-- Image 2 -->
+            <div class="w3-col l3 m4 s12 w3-margin-bottom card-hover w3-card-4" role="listitem">
+              <img src="cozy-winter-window-stockcake.jpg" alt="Cozy Window" class="thumb w3-image" loading="lazy">
+              <div class="card-caption">Cozy Window</div>
             </div>
-
-            <div class="w3-third w3-margin-bottom">
-            <div class="w3-card-4 card-hover w3-animate-bottom">
-                <img src="cozy-winter-window-stockcake.jpg" alt="Cozy Window" class="thumb">
-                <div class="card-caption">Cozy Window</div>
+    
+            <!-- Image 3 -->
+            <div class="w3-col l3 m4 s12 w3-margin-bottom card-hover w3-card-4" role="listitem">
+              <img src="snowy-alleyway-evening-stockcake.jpg" alt="Alleyway Lights" class="thumb w3-image" loading="lazy">
+              <div class="card-caption">Alleyway Lights</div>
             </div>
+    
+            <!-- Image 4 -->
+            <div class="w3-col l3 m4 s12 w3-margin-bottom card-hover w3-card-4" role="listitem">
+              <img src="istockphoto-497859024-612x612.jpg" alt="Frosted Windowpanes" class="thumb w3-image" loading="lazy">
+              <div class="card-caption">Frosted Windowpanes</div>
             </div>
-
-            <div class="w3-third w3-margin-bottom">
-            <div class="w3-card-4 card-hover w3-animate-bottom">
-                <img src="snowy-alleyway-evening-stockcake.jpg" alt="Alleyway Lights" class="thumb">
-                <div class="card-caption">Alleyway Lights</div>
+    
+            <!-- Image 5 -->
+            <div class="w3-col l3 m4 s12 w3-margin-bottom card-hover w3-card-4" role="listitem">
+              <img src="tumblr_1bdcb2e621cacb3bee6318fd73cf1baf_aff6bd69_1280.jpg" alt="Snowy Rooflines" class="thumb w3-image" loading="lazy">
+              <div class="card-caption">Snowy Rooflines</div>
             </div>
+    
+            <!-- Image 6 -->
+            <div class="w3-col l3 m4 s12 w3-margin-bottom card-hover w3-card-4" role="listitem">
+              <img src="eveglo_03c2a315-15fb-4d4f-af19-d37dfa3f9da2.jpg" alt="Evening Glow" class="thumb w3-image" loading="lazy">
+              <div class="card-caption">Evening Glow</div>
             </div>
-
-            <!-- row 2 -->
-            <div class="w3-third w3-margin-bottom">
-            <div class="w3-card-4 card-hover w3-animate-bottom">
-                <img src="istockphoto-497859024-612x612.jpg" alt="Frosted Windowpanes" class="thumb">
-                <div class="card-caption">Frosted Windowpanes</div>
+    
+            <!-- Image 7 (placeholder — swap filename as needed) -->
+            <div class="w3-col l3 m4 s12 w3-margin-bottom card-hover w3-card-4" role="listitem">
+              <img src="photo7.jpg" alt="Winter Scene 7" class="thumb w3-image" loading="lazy">
+              <div class="card-caption">Winter Scene 7</div>
             </div>
+    
+            <!-- Image 8 (placeholder) -->
+            <div class="w3-col l3 m4 s12 w3-margin-bottom card-hover w3-card-4" role="listitem">
+              <img src="photo8.jpg" alt="Winter Scene 8" class="thumb w3-image" loading="lazy">
+              <div class="card-caption">Winter Scene 8</div>
             </div>
-
-            <div class="w3-third w3-margin-bottom">
-            <div class="w3-card-4 card-hover w3-animate-bottom">
-                <img src="tumblr_1bdcb2e621cacb3bee6318fd73cf1baf_aff6bd69_1280.jpg" alt="Snowy Rooflines" class="thumb">
-                <div class="card-caption">Snowy Rooflines</div>
+    
+            <!-- Image 9 (placeholder) -->
+            <div class="w3-col l3 m4 s12 w3-margin-bottom card-hover w3-card-4" role="listitem">
+              <img src="photo9.jpg" alt="Winter Scene 9" class="thumb w3-image" loading="lazy">
+              <div class="card-caption">Winter Scene 9</div>
             </div>
-            </div>
-
-            <div class="w3-third w3-margin-bottom">
-            <div class="w3-card-4 card-hover w3-animate-bottom">
-                <img src="eveglo_03c2a315-15fb-4d4f-af19-d37dfa3f9da2.jpg" alt="Evening Glow" class="thumb">
-                <div class="card-caption">Evening Glow</div>
-            </div>
-            </div>
-
-        </div> <!-- /.w3-row-padding -->
+    
+          </div> <!-- /.w3-row-padding -->
         </div> <!-- /.gallery-row -->
-
+    
         <!-- FOOTER -->
         <footer class="site-footer w3-margin-top">
-        <div class="w3-container">
-            <p style="margin:6px 0 8px 0;">© <strong>Bracken Biesinger</strong> — Photo Gallery &nbsp;•&nbsp; <a href="#" class="w3-text-dark-gray">Accessibility</a> &nbsp;•&nbsp; <a href="#" class="w3-text-dark-gray">Contact</a></p>
+          <div class="w3-container">
+            <p style="margin:6px 0 8px 0;">© <strong>Bracken Biesinger</strong> — Photo Gallery &nbsp;•&nbsp;
+              <a href="#" class="w3-text-dark-gray">Accessibility</a> &nbsp;•&nbsp;
+              <a href="#" class="w3-text-dark-gray">Contact</a>
+            </p>
             <small style="color:#666;">Built with W3.CSS • Animations: w3-animate-bottom / w3-animate-opacity</small>
-        </div>
+          </div>
         </footer>
-
-    </div> <!-- /.graybox -->
+    
+      </div> <!-- /.graybox -->
     </body>
+
 </html>
+
 
