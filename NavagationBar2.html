@@ -9,60 +9,65 @@
     <style>
         /* Gray container */
         .graybox {
-        background: #f0f0f0;
-        padding: 16px;
-        border-radius: 10px;
-        max-width: 1100px;
-        margin: 22px auto;
-        box-shadow: 0 8px 28px rgba(0,0,0,0.07);
+          background: #f0f0f0;
+          padding: 16px;
+          border-radius: 10px;
+          max-width: 1100px;
+          margin: 22px auto;
+          box-shadow: 0 8px 28px rgba(0,0,0,0.07);
         }
-
+        
         /* Navbar tweaks */
         .my-nav { border-radius: 8px; overflow: hidden; }
         .my-nav .w3-bar { background: #3a3a3a; color: #dcdcdc; }
         .navlink { color:#e6e6e6; font-weight:600; padding:14px 18px; text-decoration:none; border-right:1px solid rgba(255,255,255,0.04); }
         .navlink:hover { background:#5c5c5c; color:#fff; }
         .navlink.active { background:#232323; color:#fff; }
-
+        
         /* Banner */
         .banner { display:block; width:100%; height:100%; margin-top:12px; border-radius:8px; object-fit:cover; max-height:1000px; }
-
+        
         /* Gallery grid */
         .gallery-row { margin-top:18px; }
+        /* you are overriding w3-card-4 intentionally — fine to keep */
         .w3-card-4 { overflow:hidden; border-radius:8px; background:#fff; }
-
+        
         /* Thumbnail sizing & uniform crop using object-fit */
         .thumb {
-        width:100%;
-        height:300px;
-        object-fit:cover;
-        display:block;
-        transition: transform .35s ease, box-shadow .35s ease;
-        cursor: pointer;
+          width:100%;
+          height:300px;              /* desktop default */
+          object-fit:cover;
+          display:block;
+          transition: transform .35s ease, box-shadow .35s ease;
+          cursor: pointer;
         }
         .card-hover:hover .thumb { transform: scale(1.05); box-shadow: 0 12px 28px rgba(0,0,0,0.16); }
-
+        
         .card-caption { padding:10px 12px; font-weight:600; color:#333; background:#fff; }
-
+        
         /* Footer */
         footer.site-footer {
-        margin-top:22px;
-        padding:18px;
-        border-radius:8px;
-        background:linear-gradient(180deg,#efefef,#e6e6e6);
-        text-align:center;
-        color:#333;
-        font-size:0.95rem;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+          margin-top:22px;
+          padding:18px;
+          border-radius:8px;
+          background:linear-gradient(180deg,#efefef,#e6e6e6);
+          text-align:center;
+          color:#333;
+          font-size:0.95rem;
+          box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
         }
-
+        
         /* Responsive adjustments */
         @media (max-width:900px) { .thumb { height:160px; } }
+        
         @media (max-width:640px){
-        .thumb { height:500px; }
-        /* stack nav links on narrow screens */
-        .my-nav .w3-bar .navlink { display:block; border-right:none; border-bottom:1px solid rgba(255,255,255,0.04); }
+          /* switch to 'auto' so images scale naturally on phones */
+          .thumb { height:auto; }
+        
+          /* stack nav links on narrow screens */
+          .my-nav .w3-bar .navlink { display:block; border-right:none; border-bottom:1px solid rgba(255,255,255,0.04); }
         }
+
     </style>
     </head>
 
@@ -146,3 +151,4 @@
     </div> <!-- /.graybox -->
     </body>
 </html>
+
