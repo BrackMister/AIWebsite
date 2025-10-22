@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Bracken Biesinger — Gallery</title>
+  
+    <!-- W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+    <style>
+      /* Gray container */
+      .graybox {
+        background: #f0f0f0;
+        padding: 16px;
+        border-radius: 10px;
+        max-width: 1100px;
+        margin: 22px auto;
+        box-shadow: 0 8px 28px rgba(0,0,0,0.07);
+      }
+  
+      /* Navbar tweaks */
+      .my-nav { border-radius: 8px; overflow: hidden; }
+      .my-nav .w3-bar { background: #3a3a3a; color: #dcdcdc; }
+      .navlink { color:#e6e6e6; font-weight:600; padding:14px 18px; text-decoration:none; border-right:1px solid rgba(255,255,255,0.04); }
+      .navlink:hover { background:#5c5c5c; color:#fff; }
+      .navlink.active { background:#232323; color:#fff; }
+  
+      /* Banner */
+      .banner { display:block; width:100%; height:100%; margin-top:12px; border-radius:8px; object-fit:cover; max-height:1000px; }
+  
+      /* Gallery grid */
+      .gallery-row { margin-top:18px; }
+      .w3-card-4 { overflow:hidden; border-radius:8px; background:#fff; }
+  
+      /* Thumbnail sizing & uniform crop */
+      .thumb {
+        width:100%;
+        height:300px;
+        object-fit:cover;
+        display:block;
+        transition: transform .35s ease, box-shadow .35s ease;
+        cursor: pointer;
+      }
+      .card-hover:hover .thumb { transform: scale(1.05); box-shadow: 0 12px 28px rgba(0,0,0,0.16); }
+  
+      .card-caption { padding:10px 12px; font-weight:600; color:#333; background:#fff; }
+  
+      /* Footer */
+      footer.site-footer {
+        margin-top:22px;
+        padding:18px;
+        border-radius:8px;
+        background:linear-gradient(180deg,#efefef,#e6e6e6);
+        text-align:center;
+        color:#333;
+        font-size:0.95rem;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+      }
+  
+      /* Responsive adjustments */
+      @media (max-width:900px) { .thumb { height:160px; } }
+  
+      @media (max-width:640px){
+        .thumb { height:auto; } /* mobile-friendly */
+        .my-nav .w3-bar .navlink { display:block; border-right:none; border-bottom:1px solid rgba(255,255,255,0.04); }
+      }
+  
+      /* Small focus outline improvement for keyboard users */
+      .navlink:focus, .navlink:focus-visible { outline: 3px solid rgba(100,150,255,0.35); outline-offset: 2px; }
+    </style>
+  </head>
+  
+  <body class="w3-light-grey">
+  
+    <!-- Skip link for keyboard users -->
+    <a class="w3-sr-only w3-button" href="#main-content" style="position:absolute;left:-9999px;top:auto;">Skip to content</a>
+  
+    <div class="graybox">
+  
+      <!-- NAV BAR -->
+      <nav class="my-nav" aria-label="Primary">
+        <div class="w3-bar w3-padding-small">
+          <a href="index.html" class="w3-bar-item navlink active">Home</a>
+          <a href="about.html" class="w3-bar-item navlink">About</a>
+          <a href="portfolio.html" class="w3-bar-item navlink">Portfolio</a>
+          <a href="contact.html" class="w3-bar-item navlink">Contact</a>
+          <div class="w3-right w3-hide-small">
+            <a href="https://example.com" target="_blank" rel="noopener" class="w3-bar-item navlink">External</a>
+          </div>
+        </div>
+      </nav>
+  
+      <!-- BANNER (animated) -->
+      <img src="TownfrontwithSnow1000.jpg" alt="Snowy town banner" class="banner w3-image w3-animate-opacity">
+  
+      <!-- MAIN CONTENT -->
+      <main id="main-content" role="main">
+  
+        <!-- GALLERY (W3.CSS Fluid Grid: l3 m4 s12 -> 4 / 3 / 1 columns) -->
+        <section class="gallery-row" aria-labelledby="gallery-heading">
+          <h2 id="gallery-heading" class="w3-text-dark-gray" style="margin:0 0 12px 0; font-weight:700;">Photo Gallery</h2>
+  
+          <div class="w3-row-padding" role="list" aria-label="Photo gallery">
+  
+            <!-- Image 1 -->
+            <div class="w3-col l3 m4 s12 w3-margin-bottom card-hover w3-card-4" role="listitem">
+              <img src="Chaos15.webp" alt="Abstract piece titled Chaos 15" class="thumb w3-image" loading="lazy">
+              <div class="card-caption">Chaos 15</div>
+            </div>
+  
+            <!-- Image 2 -->
+            <div class="w3-col l3 m4 s12 w3-margin-bottom card-hover w3-card-4" role="listitem">
+              <img src="Chaos30.webp" alt="Abstract piece titled Chaos 30" class="thumb w3-image" loading="lazy">
+              <div class="card-caption">Chaos 30</div>
+            </div>
+  
+            <!-- Image 3 -->
+            <div class="w3-col l3 m4 s12 w3-margin-bottom card-hover w3-card-4" role="listitem">
+              <img src="Chaos100.webp" alt="Abstract piece titled Chaos 100" class="thumb w3-image" loading="lazy">
+              <div class="card-caption">Chaos 100</div>
+            </div>
+  
+            <!-- Image 4 -->
+            <div class="w3-col l3 m4 s12 w3-margin-bottom card-hover w3-card-4" role="listitem">
+              <img src="Drawing.webp" alt="Black-and-white drawing" class="thumb w3-image" loading="lazy">
+              <div class="card-caption">Drawing</div>
+            </div>
+  
+            <!-- Image 5 -->
+            <div class="w3-col l3 m4 s12 w3-margin-bottom card-hover w3-card-4" role="listitem">
+              <img src="Icon.webp" alt="Minimal icon-like composition" class="thumb w3-image" loading="lazy">
+              <div class="card-caption">Icon</div>
+            </div>
+  
+            <!-- Image 6 -->
+            <div class="w3-col l3 m4 s12 w3-margin-bottom card-hover w3-card-4" role="listitem">
+              <img src="Minimalism.webp" alt="Minimalist composition" class="thumb w3-image" loading="lazy">
+              <div class="card-caption">Minimalism</div>
+            </div>
+  
+            <!-- Image 7 -->
+            <div class="w3-col l3 m4 s12 w3-margin-bottom card-hover w3-card-4" role="listitem">
+              <img src="Raw.webp" alt="Raw study" class="thumb w3-image" loading="lazy">
+              <div class="card-caption">Raw</div>
+            </div>
+  
+            <!-- Image 8 -->
+            <div class="w3-col l3 m4 s12 w3-margin-bottom card-hover w3-card-4" role="listitem">
+              <img src="S100.webp" alt="Study S100" class="thumb w3-image" loading="lazy">
+              <div class="card-caption">S100</div>
+            </div>
+  
+            <!-- Image 9 -->
+            <div class="w3-col l3 m4 s12 w3-margin-bottom card-hover w3-card-4" role="listitem">
+              <img src="S1000.webp" alt="Study S1000" class="thumb w3-image" loading="lazy">
+              <div class="card-caption">S1000</div>
+            </div>
+  
+          </div> <!-- /.w3-row-padding -->
+        </section> <!-- /.gallery-row -->
+  
+      </main>
+  
+      <!-- FOOTER -->
+      <footer class="site-footer w3-margin-top" role="contentinfo">
+        <div class="w3-container">
+          <p style="margin:6px 0 8px 0;">© <strong>Bracken Biesinger</strong> — Photo Gallery &nbsp;•&nbsp;
+            <a href="#" class="w3-text-dark-gray">Accessibility</a> &nbsp;•&nbsp;
+            <a href="#" class="w3-text-dark-gray">Contact</a>
+          </p>
+          <small style="color:#666;">Built with W3.CSS • Animations: w3-animate-bottom / w3-animate-opacity</small>
+        </div>
+      </footer>
+  
+    </div> <!-- /.graybox -->
+  
+  </body>
+</html>
