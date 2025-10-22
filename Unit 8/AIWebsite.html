@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <title>W3.CSS Fluid Image Grid</title>
+  <style>
+    /* optional: give the gallery a max width and center it */
+    .gallery-wrapper { max-width: 1200px; margin: 0 auto; padding: 16px; }
+    /* optional: crop-like effect with object-fit while keeping accessibility */
+    .gallery-img { width:100%; height:220px; object-fit:cover; display:block; }
+    @media (max-width:600px){ .gallery-img { height:auto; } }
+  </style>
+</head>
+<body>
+
+  <header class="w3-container w3-light-grey w3-padding-16">
+    <h2>My Image Grid (W3.CSS Fluid Grid)</h2>
+    <p>4 columns (large), 3 columns (medium), 1 column (small)</p>
+  </header>
+
+  <main class="gallery-wrapper">
+    <!-- row with padding between columns -->
+    <div class="w3-row-padding" role="list">
+      <!-- Repeat one of these blocks for each image (here: 12 images) -->
+      <div class="w3-col l3 m4 s12" role="listitem">
+        <!-- Replace src with your image path -->
+        <img class="gallery-img w3-image" src="images/photo1.jpg" alt="Description of photo 1">
+      </div>
+
+      <div class="w3-col l3 m4 s12" role="listitem">
+        <img class="gallery-img w3-image" src="images/photo2.jpg" alt="Description of photo 2">
+      </div>
+
+      <div class="w3-col l3 m4 s12" role="listitem">
+        <img class="gallery-img w3-image" src="images/photo3.jpg" alt="Description of photo 3">
+      </div>
+
+      <div class="w3-col l3 m4 s12" role="listitem">
+        <img class="gallery-img w3-image" src="images/photo4.jpg" alt="Description of photo 4">
+      </div>
+
+      <div class="w3-col l3 m4 s12" role="listitem">
+        <img class="gallery-img w3-image" src="images/photo5.jpg" alt="Description of photo 5">
+      </div>
+
+      <div class="w3-col l3 m4 s12" role="listitem">
+        <img class="gallery-img w3-image" src="images/photo6.jpg" alt="Description of photo 6">
+      </div>
+
+      <div class="w3-col l3 m4 s12" role="listitem">
+        <img class="gallery-img w3-image" src="images/photo7.jpg" alt="Description of photo 7">
+      </div>
+
+      <div class="w3-col l3 m4 s12" role="listitem">
+        <img class="gallery-img w3-image" src="images/photo8.jpg" alt="Description of photo 8">
+      </div>
+
+      <div class="w3-col l3 m4 s12" role="listitem">
+        <img class="gallery-img w3-image" src="images/photo9.jpg" alt="Description of photo 9">
+      </div>
+
+      <!-- optional extras -->
+      <div class="w3-col l3 m4 s12" role="listitem">
+        <img class="gallery-img w3-image" src="images/photo10.jpg" alt="Description of photo 10">
+      </div>
+
+      <div class="w3-col l3 m4 s12" role="listitem">
+        <img class="gallery-img w3-image" src="images/photo11.jpg" alt="Description of photo 11">
+      </div>
+
+      <div class="w3-col l3 m4 s12" role="listitem">
+        <img class="gallery-img w3-image" src="images/photo12.jpg" alt="Description of photo 12">
+      </div>
+    </div>
+  </main>
+
+  <footer class="w3-container w3-light-grey w3-padding-16">
+    <p>Tip: update alt attributes with meaningful descriptions for accessibility.</p>
+  </footer>
+
+</body>
+</html>
